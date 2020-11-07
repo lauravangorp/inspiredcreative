@@ -1,12 +1,12 @@
 body {
-	width: 85vw;
-	margin: 5rem auto;
 	font-size: 1.7rem;
 	background: white;
 	color: black;
 	font-family: "helvetica neue",helvetica;
 	transition: 1s all;
 	line-height: 3rem;
+	padding: 2rem;
+	overflow-x: hidden;
   /* background:
     linear-gradient(45deg, transparent 74px, transparent 75px, #161616 75px, #161616 76px, transparent 77px, transparent 109px),
     linear-gradient(-45deg, transparent 75px, transparent 76px, #161616 76px, #161616 77px, transparent 78px, transparent 109px),
@@ -14,83 +14,108 @@ body {
   background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
 }
+
 b{
 	font-weight: 500;
 }
-header h1 a {
-	color: #979690;
-	text-decoration: none;
-	font-size: 4.5rem;
-	font-weight: 600;
-	font-family: amador, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	text-transform: lowercase;
+
+/* header */
+
+nav {
+	margin-bottom: 25px;
+	padding: 2rem;
+	text-align: center;
+	position: relative;
+	z-index: 100;
 }
-header {
-	border-bottom: 1px solid black;
-	padding-bottom: 0rem;}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding-right: 2.6rem;
+	text-transform: uppercase;
+	font-family: 'Libre Caslon Display', serif;
+	font-size: 1.7rem;
+	z-index: 100;
+	transition: 1s;
+}
+
+nav a:hover{
+	color: grey;
+	padding-top: 1rem;
+}
 
 header nav ul {
 	display: flex;
 	flex-direction: row;
 }
 
-header nav ul li {
-	margin-top: 4rem;
-	margin-right: 1.5rem;
-}
-
-header nav ul li a {
-	color: #979690;
-	transition: all 0.5s;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 1.3rem;
-	font-family: "helvetica neue",helvetica;
-}
-
-header nav ul li a.selected {
-	color: white;
-	background-color: #979690;
-	padding: 0.7rem;
-	border-radius: 1rem;
-}
-
-header nav ul li:hover a{
-	color: white;
-}
-
-header {
-	margin-bottom: 5rem;
-}
 
 header h1 svg{
 	border: none;
 	width: 15rem;
-	padding: 0rem;
 }
 
+header {
+	position: relative;
+	border-bottom: 1px solid black;
+	z-index: 100;
+	margin-bottom: 5rem;
+}
+
+header nav ul li a.selected {
+	color: grey;
+	border-radius: 1rem;
+}
+
+
 main h2 {
-	font-size: 4.3rem;
+	font-size: 4rem;
 	font-weight: 600;
 	margin-bottom: 3rem;
 	font-weight: 500;
 	margin-bottom: 3rem;
 	font-weight: 500;
 	margin-bottom: 3rem;
-	font-family: freight-big-pro, serif;
+	font-family: 'Libre Caslon Display', serif;
 	font-style: normal;
 	text-transform: uppercase;
 	}
-}
-}
 
 main p {
 	line-height: 3rem;
 	margin-bottom: 3rem;
 	max-width: 80%;
 	margin-left: 10%;
+}
+
+.afbeelding{
+ background-image: url(../img/portret.jpg);
+ height:60rem;
+ width: 100%;
+ background-repeat: no-repeat;
+ border:none;
+ background-position: center;
+}
+
+.homepagetitel {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	font-size: 10rem;
+	color: #FDEA07;
+	transform: rotate(50deg);
+	position: absolute;
+	top:59rem;
+	right: 1rem;
+	font-weight: 900;
+	z-index: 100;
+}
+
+.leeg{
+		font-family: 'Libre Caslon Display', serif;
+		text-align: center;
+		padding: 5rem;
 }
 
 img {
@@ -129,6 +154,7 @@ main h3 {
 	font-style: normal;
 	text-transform: uppercase;
 	margin-top: 2rem;
+	margin-left: 2rem;
 }
 
 main h4 {
@@ -149,22 +175,15 @@ main ul.blog li a {
 
 main ul.blog li {
 	margin-bottom: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
 }
 
 main {
 	margin-bottom: 5rem;
 }
 
-.footerlogo{
-	font-size: 2rem;
-	font-weight: 600;
-	font-family: amador, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	text-transform: lowercase;
-}
-
-.experiment1{
+ /*.experiment1{
       background-color: orange;
       font-family: helvetica;
       width: 50vw;
@@ -214,7 +233,7 @@ main {
 			margin-top: -4.4rem;
 			color: white;
 			line-height: 7rem;
-}
+}*/
 
 .footertekst{
 	font-size: 1.3rem;
@@ -225,7 +244,7 @@ main {
 	text-decoration: none;
 	font-size: 6rem;
 	font-weight: 600;
-	font-family: amador, sans-serif;
+	font-family: 'amador', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	text-transform: lowercase;
@@ -238,6 +257,15 @@ main {
 	color: orange;
 }
 
+.footerlogo{
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: 'amador', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: lowercase;
+}
+
 footer{
 	border-top: 1px solid black;
 }
@@ -245,6 +273,7 @@ footer{
 footer{
 	padding-top: 2rem;
 }
+
 /*form*/
 
 #form {
@@ -311,6 +340,7 @@ textarea:hover {
 	.works{
 		column-count: 2;
 		gap: 40px;
+		padding-right: 3rem;
 	}
 
 	.grid{
@@ -324,7 +354,7 @@ textarea:hover {
 		margin-bottom: 0;
 	}
 
-	.experiment1{
+	/*.experiment1{
 	      width: 40vw;
 	      height: 40vw;
 	      border-radius: 50%;
@@ -359,7 +389,7 @@ textarea:hover {
 				margin-left: 10%;
 				line-height: 6rem;
 				margin-top: -6.4rem;
-	}
+	}*/
 
 	img {
 		max-width: 100%;
@@ -391,6 +421,26 @@ textarea:hover {
 	.Instagram{
 		grid-row: 1/3;
 	}
+
+	.foto{
+	 background-image: url(../img/portret.jpg);
+	 height: 100vh;
+	 background-repeat: no-repeat;
+	 border:none;
+	}
+
+	.homepagetitel {
+		padding-top: 14rem;
+		padding-bottom: 3rem;
+		font-size: 10rem;
+		color: #FDEA07;
+		transform: rotate(50deg);
+		position: absolute;
+		top:53rem;
+		right: 1rem;
+		font-weight: 900;
+		z-index: 100;
+	}
 }
 
 
@@ -400,6 +450,7 @@ textarea:hover {
 		border: 1px solid black;
 		padding: 1rem;
 	}
+
 	header nav ul {
 		display: flex;
 		flex-direction: row;
@@ -408,20 +459,22 @@ textarea:hover {
 		margin-top: 0;
 	}
 
-	header nav ul li {
+header nav ul li {
 		margin-top: 0;
 	}
 
 	header nav {
 		position: absolute;
-		top: 5.5rem;
-		right: 10vw;
+		right: 5%;
+		top: 0rem;
 	}
 
 	.works{
 		column-count: 3;
 		gap: 60px;
+		padding-right: 4rem;
 	}
+
 	.blogpic1{
 		max-width: 45%;
 		margin-left: 50%;
@@ -431,7 +484,7 @@ textarea:hover {
 		max-width: 45%;
 		margin-left: 10%;
 	}
-
+/*
 		.experiment1{
 		      width: 40vw;
 		      height: 40vw;
@@ -464,7 +517,7 @@ textarea:hover {
 					margin-left: 10%;
 					line-height: 20rem;
 					margin-top: -6.4rem;
-		}
+		}*/
 
 			#form {
 			  position: relative;
@@ -473,6 +526,79 @@ textarea:hover {
 				margin-top: 10rem;}
 
 		.naam{
-			margin-left: 35%;
+			margin-left: 30%;
 		}
+
+
+			.homepagetitel {
+				padding-top: 3rem;
+				padding-bottom: 3rem;
+				font-size: 12rem;
+				color: #FDEA07;
+				transform: rotate(50deg);
+				position: absolute;
+				top:40rem;
+				right: 5rem;
+				font-weight: 900;
+				z-index: 100;
+			}
+
+
+		}
+
+@media (min-width: 1200px) {
+
+	main{
+		margin: 5rem;
+	}
+		header nav {
+			position: absolute;
+			right: 33%;
+			top: 0rem;
+		}
+
+		header{
+			border-bottom: none;
+		}
+
+}
+
+
+
+@media (min-width: 1369px) {
+
+		.homepagetitel {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			font-size: 12rem;
+			color: #FDEA07;
+			transform: rotate(50deg);
+			position: absolute;
+			top:40rem;
+			right: 5rem;
+			font-weight: 900;
+			z-index: 100;
+		}
+
+		.fullpage{
+			display: grid;
+			grid-template-columns: 1.3fr 1fr;
+			height: 100vh;
+			z-index: 3;
+		}
+
+		.leeg{
+			grid-column: 1;
+		}
+
+		.foto{
+
+		}
+
+}
+
+/* @media (min-width: 1200px) {
+	foto{
+	 margin: -12rem;
+	 margin-top:-21rem;
 }

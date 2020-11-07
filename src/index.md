@@ -2,7 +2,9 @@
 title: ''
 layout: 'layouts/page.html'
 ---
+<div class="fullpage">
+  <div class="leeg">WHAT IS IT TRULY LIKE TO FEEL INSPIRED</div>
+  <div class="afbeelding"></div>
+</div>
 
-<div class="experiment1">Hello world, these</div>
-<div class="experiment2">are my</div>
-<div class="experiment3">inspir<br>ations</br></div>
+<h2 class="homepagetitel">INSPI.RED</h2>
